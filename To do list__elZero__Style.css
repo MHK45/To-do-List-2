@@ -1,0 +1,139 @@
+*{
+  box-sizing: border-box 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.to-do-contaire{
+    width: 600px;
+    margin: 30px auto 0;
+   background-color: #f6f6f6;
+}
+.to-do-contaire .add-task{
+    padding: 15px;
+    background-color: #009688;
+    position: relative;
+}
+.to-do-contaire .add-task input{
+    display: inline-block;
+    padding: 12px 15px;
+    border: none;
+    background-color: rgba(255,255,255,.3);
+    width: calc(100% - 15px);
+    color: #fff;
+    font-size: 15px;
+}
+.to-do-contaire .add-task input:focus{
+    outline: none;
+}
+.to-do-contaire .add-task .plus{
+    position: absolute; 
+    height: 43px;
+    width: 43px;
+    background-color: #fff;
+    right: 12px;
+    border-radius: 50%; 
+    line-height: 43px;
+    text-align: center;
+    color: #009688;
+    cursor: pointer;
+    font-size: 38px;
+    transition: transform 0.5s;
+}
+.to-do-contaire .add-task .plus:hover{
+    transform: rotate(90deg);
+}
+/*Debut Task Content */
+.to-do-contaire .tasks-content{
+    padding: 15px;
+}
+.to-do-contaire .tasks-content .no-tasks-msg{
+  color: #777;
+  font-size: 15px;
+}
+.to-do-contaire .tasks-content >span{
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+}
+.to-do-contaire .tasks-content >span:not(:last-child){
+   margin-bottom: 15px;
+}
+.to-do-contaire .tasks-content .task-box .delete{
+    float: right;
+    background: #e91e63;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;;
+}
+.to-do-contaire .tasks-content .task-box.finished{
+    text-decoration: line-through;
+
+}
+/* Fin Task Content */
+
+ /* Task Stats*/
+.task-stats{
+    clear: both;
+    width: 600px;
+    margin: 10px auto;
+    font-size: 12px;
+}
+.task-stats .task-count{
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+.task-stats .task-Completed{
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: right;
+  }
+.task-stats .task-count span,
+.task-stats .task-Completed span{
+     padding: 2px 5px;
+     font-size: 10px;
+     font-weight: bold;
+     color: #fff;
+     border-radius: 5px;
+  }
+.task-stats .task-count span{
+    background-color: #e91e63;
+  }
+  .task-stats .task-Completed span{
+    background-color: #03a9fa;
+  }
+  
+  /* Debut Btns */
+.btns{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.btns button{
+    margin: 15px auto 0;
+    padding: 10px 25px;
+    background-color: #03a9fa;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 15px;
+    text-align: center;
+    
+    
+}
+.btns .deleteAll{
+   margin: 50px 250px;
+   
+}
+.btns .checkedAll{
+    margin: 50px 150px;
+}
+
+  /* Fin Btns */
